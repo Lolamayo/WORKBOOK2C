@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOLA MAYO_30 04</title>
+        <link href="style2C.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+      </script>
+        <style>
+            .text {
+                width: 90%;
+    
+            }
+        </style>
+    </head>
+
+    <body>
+            <div href="#" class="img bg"></div>
+            <div id="mySidebar" class="sidebar">
+            <section class="column">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="https://lolamayo.github.io/WORKBOOKS/">Workbook 2A</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2/">Workbook 2B</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2C/">Workbook 2C</a>
+
+            </div>
+            </section>
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+
+        
+            <div class="content">
+                <div id="title">
+                    <h1>30/04: SINGING PLANT</h1>
+                    <br><br>
+                </div>
+            <section class="column">
+                <div class="text">
+                    <P>I stumbled upon an instructable where <a href="https://www.instructables.com/member/madshobye/">Madshobye</a> makes <a href="https://www.instructables.com/Singing-plant-Make-your-plant-sing-with-Arduino-/">Plants Sing</a>
+                    , using a touche shield, going off of the same principle as the theremin. 
+                    Any 2 conductive objects have a capacitance, and so by connecting a capacitance sensor to a plant we can detect if people are touching it and convert the touch into sound. Normally you would do this with a theremin like interface. 
+                    Madshobye uses the touché frequency principle by Disney Research lab instead, which runs entirely on the Arduino platform. The Touché works on a similar principle as a normal theremin, but does a frequency sweep instead.</P>
+                </div>
+            </section>
+            <section class="row">
+              <div>
+                <p>
+                <b>Components needed:</b><br>
+                Arduino, Homemade touche shield [Prototyping shield, Pin headers, Resister: 10k, 1MOmh, 3,3k, Capacitor: 100pf, 10nf, Diode: 1N4148 diode
+                Coil / inductor: 10mH (cypax.dk  part no: 07.055.0510)], Gameduino (for sound), Two buttons, 2 alligator clips, 2 banana connectors.
+
+                </p>
+              </div>
+              <div>
+                <figure>
+                  <img width="550px" height="auto" src="./IMAGES2C/rmitbot2.jpg" alt="">
+                  <figcaption>RMIT cleaning bot built-in map</figcaption>
+                </figure>
+              </div>
+          </section>
+            
+            </div>
+    </body>

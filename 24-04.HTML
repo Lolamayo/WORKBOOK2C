@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOLA MAYO_24 04</title>
+        <link href="style2C.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+        // Make the DIV element draggable:
+        dragElement(document.getElementById("mydiv"));
+
+        function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            // if present, the header is where you move the DIV from:
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            // stop moving when mouse button is released:
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+        }
+
+      </script>
+        <style>
+            .text {
+                width: 90%;
+    
+            }
+        </style>
+    </head>
+
+    <body>
+            <div href="#" class="img bg"></div>
+            <div id="mySidebar" class="sidebar">
+            <section class="column">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="https://lolamayo.github.io/WORKBOOKS/">Workbook 2A</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2/">Workbook 2B</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2C/">Workbook 2C</a>
+
+            </div>
+            </section>
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+            <div class="content">
+                <div id="title">
+                    <h1>24/04: SINGING PLANT</h1>
+                    <br><br>
+                </div>
+            <section class="column">
+                <div class="text">
+                    <P><a href="https://www.tofugu.com/japan/chindogu-japanese-inventions/">Chindogu</a> aren't useful. But they aren't completely useless either. Their creator, Kenji Kawakami, describes them as "un-useless." 
+                        Chindougu 珍道具ちんどうぐ is made up of two words. Chin 珍ちん means "curious" or "strange." Dougu 道具どうぐ means "tool" or "device."
+                    </P>
+                </div>
+            </section>
+
+            <section class="row">
+              <div width="50%" > 
+                <p>
+                <b>1. CHINDOGU MUST BE (ALMOST) COMPLETELY USELESS</b>
+                This is the utmost tenet. If your invention is a real help and you use it all the time, it's not chindogu. Try selling it to the public because it could be worth millions. Too bad it has no soul.
+                <br><b>2. CHINDOGU MUST EXIST</b>
+                Chindogu have to be made. If you design the invention on paper and don't make it, it doesn't qualify. It's a piece of paper with a bad invention on it. Bring the invention into the physical world so humankind can experience how truly almost useless it is.
+                <br><b>3. CHINDOGU REPRESENT FREEDOM OF THOUGHT AND ACTION</b>
+                Chindogu are free to be what they need to be. Normal devices are designed for efficiency, ease of use, and utility.
+                <br><b>4. CHINDOGU'S USELESSNESS MUST BE UNDERSTOOD BY ALL</b>
+                If you create a device that is only recognized as useless by people with certain knowledge sets (doctors, mechanics, biologists, etc.) then it is not chindogu.
+                For example, if you make a useless invention intended to help with space shuttle operations, it would take a rocket scientist to distinguish it from useful space tools. Normal people must be able to recognize the uselessness immediately.
+                <br><b>5. CHINDOGU ARE NOT FOR SALE</b>
+                If you accept money for your invention, it ceases to be chindogu. You have violated its spirit.
+                <br><b>6. HUMOR MUST NOT BE THE SOLE REASON FOR MAKING CHINDOGU</b>
+                Any humor derived from chindogu is a side effect. The invention must earnestly try and solve a problem. The roundabout and unconventional way it solves the problem is the source of the humor.
+                <br><b>7. CHINDOGU ARE NOT PROPAGANDA</b> 
+                They are made to be used, even though they are (almost) useless. They are not, in and of themselves, a statement for any cause or philosophy.
+                <br><b>8. CHINDOGU ARE NEVER TABOO</b>
+                Chindogu inventions cannot be made to enact or represent cheap sexual innuendo, vulgar humor, or sick jokes that disrespect living things.
+                <br><b>9. CHINDOGU CANNOT BE PATENTED</b>
+                The invention must remain in the public domain. It must be free to use, re-create, and distribute. It cannot be copyrighted or owned.
+                <br><b>10. CHINDOGU ARE WITHOUT PREJUDICE</b>
+                Chindogu view all human beings as equal. Therefore, they can't favor a race, religion, age group, gender, or class.
+                </p>
+              </div>
+          </section>
+                      <!-- Draggable DIV -->
+        <div id="mydiv">
+            <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+            <div id="mydivheader">My Chindogu: dog ball thrower</div>
+            <img src="./IMAGES2C/chindogulola.jpg" width="300px" height="auto">
+        </div>
+        </div>
+    </body>

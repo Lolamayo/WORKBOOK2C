@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOLA MAYO_02 05</title>
+        <link href="style2C.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+      </script>
+        <style>
+            .text {
+                width: 90%;
+    
+            }
+        </style>
+    </head>
+
+    <body>
+            <div href="#" class="img bg"></div>
+            <div id="mySidebar" class="sidebar">
+            <section class="column">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="https://lolamayo.github.io/WORKBOOKS/">Workbook 2A</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2/">Workbook 2B</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2C/">Workbook 2C</a>
+
+            </div>
+            </section>
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+
+        
+            <div class="content">
+                <div id="title">
+                    <h1>02/04: CAPACITANCE</h1>
+                    <br><br>
+                </div>
+            <section class="column">
+                <div class="text">
+                    <P>in class, I made a simple capacitance circuit using two resistors to make an LED light-up when I touch a wire. 
+                    This works because I am conductive, and the arduino is reading my capacitance, and I am finally closing the electrical circuit by grounding the wire. 
+                    In the same way, bananas and plants are also conductive due to their high water content. I could plug the wire into the banana and then touch <b>it</b> to ground the circuit and illuminate the LED.
+                    I read the numbers on the serial port on the Arduino application to understand how different factors affected the reading of electrical current. 
+                    </P>
+                </div>
+            </section>
+            <section class="row">
+              <div>
+                <figure>
+                  <img width="550px" height="auto" src="./IMAGES2C/bananacapacitance.jpg" alt="">
+                  <figcaption>Wire plugged into a conductive banana</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img width="550px" height="auto" src="./IMAGES2C/longbanana.jpg" alt="">
+                  <figcaption>Wire plugged into a conductive banana. The banana is extended using tinfoil to see if the arduino reads a lower capactiance further away from the source of power.</figcaption>
+                </figure>
+              </div>
+          </section>
+            
+            </div>
+    </body>
