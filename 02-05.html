@@ -16,8 +16,16 @@
       </script>
         <style>
             .text {
-                width: 90%;
-    
+                width: 70%;
+                font-size: 10pt;
+                line-height: 160%;
+            }
+            figcaption {
+              font-size: 10pt;
+              line-height: 160%;
+            }
+            body{
+              background-color: skyblue;
             }
         </style>
     </head>
@@ -45,7 +53,7 @@
                 </div>
             <section class="column">
                 <div class="text">
-                    <P>in class, I made a simple capacitance circuit using two resistors to make an LED light-up when I touch a wire. 
+                    <P>In class, I made a simple capacitance circuit using two resistors to make an LED light-up when I touch a wire. 
                     This works because I am conductive, and the arduino is reading my capacitance, and I am finally closing the electrical circuit by grounding the wire. 
                     In the same way, bananas and plants are also conductive due to their high water content. I could plug the wire into the banana and then touch <b>it</b> to ground the circuit and illuminate the LED.
                     I read the numbers on the serial port on the Arduino application to understand how different factors affected the reading of electrical current. 
@@ -64,6 +72,16 @@
                   <img width="550px" height="auto" src="./IMAGES2C/longbanana.jpg" alt="">
                   <figcaption>Wire plugged into a conductive banana. The banana is extended using tinfoil to see if the arduino reads a lower capactiance further away from the source of power.</figcaption>
                 </figure>
+              </div>
+            </section>
+            <section class="column">
+              <div class="text">
+                  <P><b>Applicaitons:</b>
+                    When the wire was plugged into the banana, the reading on the serial port was lower the further away from the wire I touched the banana / tinfoil.
+                    The numbers on the serial port, which correlated to the electrical current, were lower the further away from the power source I made contact.
+                    An iteration of this proejct could be to use the <a href="./LINKS2C/switch...case.url">switch case</a> to make a different sound play for each reading-increment on the serial port. 
+                    For example, 400-450 makes one tone, and touching furhter away, 500-550 makes another sound, overall creating a song.
+                  </P>
               </div>
           </section>
             

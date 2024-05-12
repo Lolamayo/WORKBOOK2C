@@ -1,8 +1,7 @@
 body {
     text-align: center; 
-    background-color: honeydew;
-    background-size: 100% auto;
 }
+
 * {
     cursor:url("IMAGES/Ava-cursor-2.png"), auto;
     margin:0px;
@@ -16,7 +15,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color: pink;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -48,14 +47,14 @@ body {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: grey;
+    background-color: pink;
     color: white;
     padding: 10px 15px;
     border: none;
     position: fixed;
     z-index: 1;
     top: 25px;
-    right: 25px;
+    left: 25px;
     border-radius: 12px;
   }
   .openbtn:hover {

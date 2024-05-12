@@ -16,8 +16,16 @@
       </script>
         <style>
             .text {
-                width: 90%;
-    
+                width: 70%;
+                font-size: 10pt;
+                line-height: 160%;
+            }
+            figcaption {
+              font-size: 10pt;
+              line-height: 160%;
+            }
+            body{
+              background-color: rgb(225, 189, 110);
             }
         </style>
     </head>
@@ -48,23 +56,28 @@
                     <P>I stumbled upon an instructable where <a href="https://www.instructables.com/member/madshobye/">Madshobye</a> makes <a href="https://www.instructables.com/Singing-plant-Make-your-plant-sing-with-Arduino-/">Plants Sing</a>
                     , using a touche shield, going off of the same principle as the theremin. 
                     Any 2 conductive objects have a capacitance, and so by connecting a capacitance sensor to a plant we can detect if people are touching it and convert the touch into sound. Normally you would do this with a theremin like interface. 
-                    Madshobye uses the touché frequency principle by Disney Research lab instead, which runs entirely on the Arduino platform. The Touché works on a similar principle as a normal theremin, but does a frequency sweep instead.</P>
+                    Madshobye uses the touché frequency principle by Disney Research lab instead, which runs entirely on the Arduino platform. The Touché works on a similar principle as a normal theremin, but does a frequency sweep instead.
+                    <br><br><b>[Components needed:</b><br>
+                    Arduino, Homemade touche shield [Prototyping shield, Pin headers, Resister: 10k, 1MOmh, 3,3k, Capacitor: 100pf, 10nf, Diode: 1N4148 diode
+                    Coil / inductor: 10mH (cypax.dk  part no: 07.055.0510)], Gameduino (for sound), Two buttons, 2 alligator clips, 2 banana connectors.]
+                      <br>
+                      <br>
+                    My first plan was to follow the instructable exactly, just buying the parts it names. I sent it to Karen ann who said there are definitely other more intuitive ways of playing with touch-sensitive capacitance and sound without buying these unnecessary specialist parts.
+                    So then, I focussed on this idea of <a href="https://lolamayo.github.io/WORKBOOK2C/02-05.html">Touch-Sensitive Capacitance & Sound.</a> 
+                    <br>
+                    I loved how the Singing Plant project turned touch into sound, mixing senses to create one art out a silent act. I want to make an interpersonal human-human version of this project, to make sound from touching. A Love-Song-Love-Machine, that can translate love (touch) into a song.
+                  </P>
                 </div>
             </section>
+            
             <section class="row">
               <div>
                 <p>
-                <b>Components needed:</b><br>
-                Arduino, Homemade touche shield [Prototyping shield, Pin headers, Resister: 10k, 1MOmh, 3,3k, Capacitor: 100pf, 10nf, Diode: 1N4148 diode
-                Coil / inductor: 10mH (cypax.dk  part no: 07.055.0510)], Gameduino (for sound), Two buttons, 2 alligator clips, 2 banana connectors.
-
+                
                 </p>
               </div>
               <div>
-                <figure>
-                  <img width="550px" height="auto" src="./IMAGES2C/rmitbot2.jpg" alt="">
-                  <figcaption>RMIT cleaning bot built-in map</figcaption>
-                </figure>
+                
               </div>
           </section>
             

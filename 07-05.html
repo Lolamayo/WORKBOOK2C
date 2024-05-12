@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOLA MAYO_07 05</title>
+        <link href="style2C.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+          function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+      </script>
+        <style>
+            .text {
+                width: 70%;
+                font-size: 10pt;
+                line-height: 160%;
+            }
+            figcaption {
+              font-size: 10pt;
+              line-height: 160%;
+            }
+            body{
+              background-color: rgb(244, 218, 173);
+            }
+        </style>
+    </head>
+
+    <body>
+            <div href="#" class="img bg"></div>
+            <div id="mySidebar" class="sidebar">
+            <section class="column">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="https://lolamayo.github.io/WORKBOOKS/">Workbook 2A</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2/">Workbook 2B</a>
+              <a href="https://lolamayo.github.io/WORKBOOK2C/">Workbook 2C</a>
+
+            </div>
+            </section>
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+
+        
+            <div class="content">
+                <div id="title">
+                    <h1>07/04: Arduino Experimentation</h1>
+                    <br><br>
+                </div>
+            <section class="column">
+                <div class="text">
+                    <P><b>1.</b>I played around with arduino capacitance, adjusting (raising) the threshold of the serial monitor to make the light illuminate not when the wire is plugged into the plant, but only when I touched the plant, grounding the circuit. The serial monitor reading differed based on where on the plant I touched it.
+                    </P>
+                </div>
+            </section>
+            <section class="row">
+              <div>
+                <figure>
+                  <img width="550px" height="auto" src="./IMAGES2C/lightonplant.jpg" alt="">
+                  <figcaption>LED light illuminates upon touching the plant.</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img width="550px" height="auto" src="./IMAGES2C/lightoffplant.jpg" alt="">
+                  <figcaption>LED light turns off when just plugged into the plant.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="column">
+                <div class="text">
+                    <P><b>2.</b>I followed a basic circuit using an active buzzer, and the Arduino Tone Library. When I ran the code, the buzzer played a simple harmony. 
+                        The harmony does not sound extremely pleasant, as active buzzers are only able to produce simple, squawking sounds. Passive buzzers are able to produce nicer sounds, and there is a broader range of projects and circuits possible with them. 
+                        Additionally, speakers placed on a bread board can play any music downloaded on the computer.
+                    </P>
+                </div>
+            </section>
+            <section class="row">
+                <div>
+                  <figure>
+                    <img width="550px" height="auto" src="./IMAGES2C/tonemelodycode.JPG" alt="">
+                    <figcaption>Plays a basic melody on an active buzzer using the Tone Library.</figcaption>
+                  </figure>
+                </div>
+                <div>
+                  <figure>
+                    <img width="550px" height="auto" src="./IMAGES2C/tonemelody.jpg" alt="">
+                    <figcaption>Basic tone circuit using a buzzer.</figcaption>
+                  </figure>
+                </div>
+              </section>          
+            </div>
+    </body>
